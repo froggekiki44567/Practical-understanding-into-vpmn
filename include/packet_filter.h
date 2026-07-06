@@ -27,3 +27,5 @@ typedef struct {
 void fw_init(firewall_t *fw, rule_action_t default_action);
 int fw_add_rule(firewall_t *fw, const char *cidr, uint16_t port, rule_action_t action);
 int fw_check(const firewall_t *fw, const unsigned char *packet, int len);
+
+#endif // PACKET_FILTER_H
